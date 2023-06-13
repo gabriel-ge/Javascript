@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function escreve(info) {
+        document.write(info);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        return imc = peso / (altura * altura);
+    }
+
+    var nome = prompt("Informe seu nome:");
+    var alturaInformada = prompt("Informe sua altura:");
+    var pesoInformado = prompt("Informe seu peso:");
+
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    if (imc < 18.5) {
+        escreve("magreza");
+    }
+
+    if (img > 35) {
+        escreve("normal");
+    }
+
+    if (imc < 29.9) {
+        escreve("sobrepeso");
+    }
+
+    if (imc < 39.9) {
+        escreve("obesidade");
+    }
+
+    if (imc == 40) {
+        escreve("obesidade grave");
+    }
+    
+
+
+</script>
