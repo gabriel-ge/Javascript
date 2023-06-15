@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>"); 
+    }
+
+    function escreve(info) {
+        document.write(info);
+        pulaLinha();
+    }
+
+    var numeroCorreto = Math.round(Math.random()*10);
+    var chute = parseInt(prompt("Digite seu chute:"));
+
+    if (chute == numeroCorreto) {
+        escreve("Você acertou!");
+    } else {
+        escreve("Você errou!")
+        escreve("O número era: " + numeroCorreto);
+    }
+
+
+
+</script>
