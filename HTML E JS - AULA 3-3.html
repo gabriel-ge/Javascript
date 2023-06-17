@@ -2,24 +2,34 @@
 
 <script>
     function pulaLinha() {
-        document.write("<br>"); 
+        document.write("<br>");
+        document.write("<br>");
     }
 
     function escreve(info) {
+
         document.write(info);
         pulaLinha();
     }
 
-    var numeroCorreto = Math.round(Math.random()*10);
-    var chute = parseInt(prompt("Digite seu chute:"));
+    var numeroCorreto = Math.round(Math.random() * 10);
 
-    if (chute == numeroCorreto) {
-        escreve("Você acertou!");
-    } else {
-        escreve("Você errou!")
-        escreve("O número era: " + numeroCorreto);
+    var tentativas = 1;
+
+    while (tentativas <= 3) {
+
+        var chute = parseInt(prompt("Digite seu chute:"));
+
+        if (chute == numeroCorreto) {
+            escreve("Você ACERTOU!, o número era: " + numeroCorreto);
+            break;
+
+        } else {
+            escreve("Você ERROU");
+        }
+
+        tentativas++;
     }
-
 
 
 </script>

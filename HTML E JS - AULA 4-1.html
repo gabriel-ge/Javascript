@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function escreve(info) {
+        document.write(info);
+        pulaLinha();
+    }
+
+    var anoSolicitado = parseInt(prompt("Escreva o ano que deseja: "));
+
+    var anoCopa = 1930;
+
+    while (anoCopa <= anoSolicitado) {
+        escreve("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+
+    escreve("Acabou");
+
+</script>

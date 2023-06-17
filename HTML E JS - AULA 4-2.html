@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function escreve(info) {
+        document.write(info);
+        pulaLinha();
+    }
+
+    
+    var numeroTabuada = parseInt(prompt("Número da tabuada: "));
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        escreve(numeroTabuada * multiplicador);
+    }
+
+
+</script>

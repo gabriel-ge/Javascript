@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function escreve(info) {
+        document.write(info);
+        pulaLinha();
+    }
+
+    var totalPessoas = parseInt(prompt("Informe quantas pessoas deseja validar: "));
+
+    var numero = 1;
+
+    var totalIdades = 0;
+
+    while (numero <= totalPessoas) {
+        var pessoa = prompt("Nome da pessoa");
+        var idade = parseInt(prompt("Digite a idade de " + pessoa));
+        totalIdades = totalIdades + idade;
+        numero++;
+    }
+
+    var mediaIdades = totalIdades / totalPessoas;
+    escreve("A média das idades de: " + mediaIdades);
+
+</script>
