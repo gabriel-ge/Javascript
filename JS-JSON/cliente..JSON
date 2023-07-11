@@ -1,0 +1,13 @@
+{
+    "nome": "Gabriel",
+    "email": "gdr.gabrielramos@gmail.com",
+    "telefone": [
+        "11223344",
+        "11922334453"
+    ],
+    "endereco": {
+        "rua": "R. Iraí",
+        "numero": 80,
+        "apartamento": false
+    }
+}
