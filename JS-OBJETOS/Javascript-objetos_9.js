@@ -14,9 +14,8 @@ cliente.enderecos = [
     },
 ];
 
-for (let chave in cliente) {
-    let tipo = typeof cliente[chave];
-    if (tipo !== 'object' && tipo !== 'function') {
-        console.log(`A chave ${chave} tem o o valor ${cliente[chave]}`);
-    }
+const chaveDoObjeto = Object.keys(cliente);
+
+if (!chaveDoObjeto.includes("enderecos")) {
+    console.error("É necessário ter um endereço cadastrado")
 }
