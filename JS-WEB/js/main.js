@@ -41,3 +41,4 @@ function criaElemento(item) {
     lista.appendChild(novoItem)
 
 }
+}
